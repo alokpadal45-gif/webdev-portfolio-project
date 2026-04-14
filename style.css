@@ -566,3 +566,21 @@ body.dark #toast { background: var(--surface2); color: var(--text); border: 1px 
   .resume-footer { flex-direction: column; }
   .resume-footer .btn { width: 100%; justify-content: center; }
 }
+/* Smooth section fade animation */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: sectionFade 0.8s ease forwards;
+}
+
+section:nth-child(1) { animation-delay: 0.1s; }
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+section:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes sectionFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
