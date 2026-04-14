@@ -594,31 +594,6 @@ section:nth-child(4) { animation-delay: 0.4s; }
     transform: translateY(0);
   }
 }
-@media print {
-
-  nav,
-  .hero-btns,
-  .resume-footer,
-  .contact,
-  footer {
-    display: none !important;
-  }
-
-  body {
-    background: white !important;
-    color: black !important;
-  }
-
-  .resume-card {
-    box-shadow: none !important;
-    border: none !important;
-  }
-
-  .resume-section {
-    padding: 0 !important;
-  }
-
-  .resume-content {
-    page-break-inside: avoid;
-  }
+.resume-footer {
+  display: none;
 }
