@@ -270,6 +270,10 @@ body.dark nav { background: rgba(14,14,13,0.93); }
   display: grid; grid-template-columns: 1fr 1.5fr;
   gap: 6rem; align-items: start;
 }
+.about-photo-box:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
 .about-photo-box {
   background: var(--surface2);
   border-radius: 16px;
