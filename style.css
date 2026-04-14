@@ -95,8 +95,10 @@ body.dark nav { background: rgba(14,14,13,0.93); }
 .hero {
   min-height: 100vh;
   padding: 100px 5% 80px;
-  display: flex; align-items: center;
+  display: flex;
+  align-items: center;
   position: relative;
+  background: linear-gradient(135deg, var(--bg), var(--surface));
 }
 
 .hero-content { max-width: 760px; }
