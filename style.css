@@ -594,6 +594,22 @@ section:nth-child(4) { animation-delay: 0.4s; }
     transform: translateY(0);
   }
 }
-.resume-footer {
-  display: none;
+@media print {
+  nav, .hero, .clocks, .about, .projects, .contact, footer, #toast {
+    display: none !important;
+  }
+  .resume-section {
+    padding: 0 !important;
+  }
+  .resume-card {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+  .resume-footer {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
 }
